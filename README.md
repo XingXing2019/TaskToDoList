@@ -1,2 +1,2 @@
 # TaskToDoList
-C# WPF Mvvm architectural pattern Demo
+C# WPF Mvvm architectural pattern demo
