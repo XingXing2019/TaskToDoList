@@ -13,12 +13,6 @@ namespace TaskToDoList.ViewModels
 {
     class ImportantTasksPageViewModel : BindableBase
     {
-        #region Commands
-
-        public DelegateCommand LoadImportantTasksCommand { get; set; }
-
-        #endregion
-
         #region Properties
 
         private const string importantTaskPath = "ImportantTaskInfo.xml";
@@ -43,17 +37,6 @@ namespace TaskToDoList.ViewModels
         public ImportantTasksPageViewModel()
         {
             this.Date = new Date();
-            this.ImportantTasks = new ObservableCollection<TaskListItemViewModel>();
-            this.LoadImportantTasksCommand = new DelegateCommand(new Action(LoadImportantTasksCommandExecute));
-        }
-
-        #endregion
-
-        #region Command Executors
-
-        //Load important tasks from xml file 
-        private void LoadImportantTasksCommandExecute()
-        {
             this.ImportantTasks = XmlDataService.LoadData<TaskListItemViewModel>(importantTaskPath);
         }
 
