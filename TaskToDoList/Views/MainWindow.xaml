@@ -96,7 +96,7 @@
                 <TextBlock Text="Task ToDo List" Foreground="#8F8F8F" FontSize="13" Margin="15 15 0 20"/>
                 <UniformGrid Columns="2">
                     <StackPanel>
-                        <Image Width="35" Height="35" Source="/TaskToDoList;component/Views/Images/logo.png" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+                        <Image Width="55" Height="55" Source="/TaskToDoList;component/Views/Images/logo.png" HorizontalAlignment="Left" Margin="10 0 0 0"/>
                     </StackPanel>
                 </UniformGrid>
 
